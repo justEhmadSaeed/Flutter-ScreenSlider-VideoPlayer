@@ -1,6 +1,6 @@
-# flutter_screen_slider
+# Flutter Screen-Slider & Video Player
 
-A new Flutter project.
+A Flutter project to document all previous assginments using Carousel Slider and Video Player pub widgets.
 
 ## Getting Started
 
