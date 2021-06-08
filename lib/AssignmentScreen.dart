@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screen_slider/CarouselContainer.dart';
 import 'package:flutter_screen_slider/DrawerHeader.dart';
 import 'package:flutter_screen_slider/constants.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -42,13 +43,11 @@ class AssignmentScreen extends StatelessWidget {
               autoPlayCurve: Curves.fastOutSlowIn,
             ),
             items: [
-              Container(
-                width: MediaQuery.of(context).size.width,
-                margin: EdgeInsets.symmetric(horizontal: 5.0),
-                decoration: BoxDecoration(color: Colors.red[900]),
+              CarouselContainer(
+                color: Colors.red[900],
                 child: Center(
                   child: Text(
-                    'Assignment 1',
+                    'Title',
                     style: TextStyle(
                       fontSize: 20,
                       color: Colors.white,
@@ -57,13 +56,11 @@ class AssignmentScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              Container(
-                width: MediaQuery.of(context).size.width,
-                margin: EdgeInsets.symmetric(horizontal: 5.0),
-                decoration: BoxDecoration(color: Colors.yellow[900]),
+              CarouselContainer(
+                color: Colors.yellow[900],
                 child: Center(
                   child: Text(
-                    'Assignment 2',
+                    'Description',
                     style: TextStyle(
                       fontSize: 20,
                       color: Colors.white,
@@ -71,7 +68,20 @@ class AssignmentScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-              )
+              ),
+              CarouselContainer(
+                color: Colors.blue[900],
+                child: Center(
+                  child: Text(
+                    'Video',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ],
