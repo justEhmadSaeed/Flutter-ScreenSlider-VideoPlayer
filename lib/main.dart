@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screen_slider/AssignmentScreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,14 +14,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
+      debugShowCheckedModeBanner: false,
+      initialRoute: AssignmentScreen.ASSIGNMENT1,
+      routes: {
+        AssignmentScreen.ASSIGNMENT1: (_) =>
+            AssignmentScreen(AssignmentScreen.ASSIGNMENT1),
+      },
     );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
