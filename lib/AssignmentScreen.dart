@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screen_slider/CarouselContainer.dart';
 import 'package:flutter_screen_slider/DrawerHeader.dart';
+import 'package:flutter_screen_slider/VideoScreen.dart';
 import 'package:flutter_screen_slider/constants.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
@@ -72,12 +73,24 @@ class AssignmentScreen extends StatelessWidget {
               CarouselContainer(
                 color: Colors.blue[900],
                 child: Center(
-                  child: Text(
-                    'Video',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+                  child: TextButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) =>
+                              VideoScreen('assets/flutter-demo.mp4')));
+                    },
+                    child: Container(
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(Icons.video_collection, color: Colors.white),
+                          Text(
+                            'Play Video',
+                            style: TextStyle(color: Colors.white),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ),
