@@ -105,10 +105,13 @@ class _AssignmentScreenState extends State<AssignmentScreen> {
               child: Center(
                 child: TextButton(
                   onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
                         builder: (context) => VideoScreen(
-                            ASSIGNMENT_DATA[assignmentIndex]['video-url']
-                                .toString())));
+                            ASSIGNMENT_DATA[assignmentIndex]['video_url']
+                                .toString()),
+                      ),
+                    );
                   },
                   child: Container(
                     child: Row(
