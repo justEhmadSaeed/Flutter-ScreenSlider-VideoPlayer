@@ -15,10 +15,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      initialRoute: AssignmentScreen.ASSIGNMENT1,
+      initialRoute: AssignmentScreen.route,
       routes: {
-        AssignmentScreen.ASSIGNMENT1: (_) =>
-            AssignmentScreen(AssignmentScreen.ASSIGNMENT1),
+        AssignmentScreen.route: (_) => AssignmentScreen(),
       },
     );
   }
