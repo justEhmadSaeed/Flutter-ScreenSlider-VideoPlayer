@@ -101,6 +101,13 @@ class _AssignmentScreenState extends State<AssignmentScreen> {
               ),
             ),
             CarouselContainer(
+              color: Colors.green,
+              child: Center(
+                child: Image.asset(
+                    ASSIGNMENT_DATA[assignmentIndex]['image_url'].toString()),
+              ),
+            ),
+            CarouselContainer(
               color: Colors.blue[900],
               child: Center(
                 child: TextButton(
