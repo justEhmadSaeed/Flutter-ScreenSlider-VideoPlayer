@@ -26,7 +26,19 @@ const ASSIGNMENT_DATA = [
     ],
     'description':
         'The app contains the implementation of different kinds of widgets including drawers, tabs, and routes.',
-    'image_url': 'assets/form-validation.png',
-    'video_url': 'assets/form-validation.mp4'
+    'image_url': 'assets/tab-bars.png',
+    'video_url': 'assets/tab-bars.mp4'
+  },
+  {
+    'title': 'Carousel Slider & Video Player',
+    'widgets': [
+      'Carousel Slider',
+      'Video Player',
+      'Drawer',
+    ],
+    'description':
+        'The app contains a drawer with navigation to all assignments and a carousel Slider on screen to display each assignment details and a link to video player screen.',
+    'image_url': 'assets/carousel-slider.png',
+    'video_url': 'assets/carousel-slider.mp4'
   },
 ];
