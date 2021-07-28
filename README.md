@@ -1,4 +1,4 @@
-# Flutter Screen-Slider & Video Player
+# Flutter Screen Slider & Video Player
 
 A Flutter project to document all previous assginments using Carousel Slider and Video Player pub widgets.
 
